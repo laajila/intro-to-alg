@@ -29,3 +29,11 @@
 - Lagrange's prime number theorem let Pi(x) the number of primes <= x then Pi(x) ~ x/ln(x)
 
 I am at 1.4
+
+DP is chapter 6. 
+RA Randomised algorithms ( a virtual chapter check page 38)
+DC divide and conquer (chapter 2) 
+GR greedy algorithms (chapter 5)
+MF max flow (chapter 7)
+Linear programing (chapter 7)
+NP (chapter 8)
