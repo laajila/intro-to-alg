@@ -22,5 +22,10 @@
 - if a>=b then a mod b < a/2
 - if d divides a and b and d=ax+ay <=> d=gcd(a,b)
 - for any mod N , a has a multiplicative inverse modulo N if and only if it is relatively prime to N meaning gcd(a,N) = 1 (I don't understand this)
+- fermat's little theorem : if p is prime then for every 1<= a < p a^(p-1)=1 mod(p)
+- if a ^ N-1 =/= 1 mod(N) for some a relatively prime to N , then it must hold for at least half the choices of a < N : what this means is that of fermat test fails for one number it will fail for half the numbers < N. which means fermat is reliable to test primality except for CarMichael number.
+- If N is prime, then a ^ N−1 ≡ 1 mod N for all a < N. => this means algorithm return yes if N is prime =1 
+- If N is not prime, then a ^ N−1 ≡ 1 mod N for at most half the values of a < N. => probability of the algorithm wrongly returning yes <= 1/2 , if we repeat the operation k time it's 2^-k probability which is at 100 very low.
+- Lagrange's prime number theorem let Pi(x) the number of primes <= x then Pi(x) ~ x/ln(x)
 
-I am at 1.3
+I am at 1.4
