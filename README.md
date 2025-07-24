@@ -27,8 +27,18 @@
 - If N is prime, then a ^ N−1 ≡ 1 mod N for all a < N. => this means algorithm return yes if N is prime =1 
 - If N is not prime, then a ^ N−1 ≡ 1 mod N for at most half the values of a < N. => probability of the algorithm wrongly returning yes <= 1/2 , if we repeat the operation k time it's 2^-k probability which is at 100 very low.
 - Lagrange's prime number theorem let Pi(x) the number of primes <= x then Pi(x) ~ x/ln(x)
-
-I am at 1.4
+- cryptography is basically giving a public lock to people and only you can unlock it.
+- alice encrypts the message with e(.) and bob has a function d(.) to decrypt it. 
+- (symmetric) one time pad is a binary r that is choosen at random to xor the message with and get an encrypted message.
+- (symmetric) AES : advanced encryption standard : alice and bob agree on a random string r (128 bits or 192 or 256), it specifies a bijection er that can be used repeatedly.
+- RSA is a public-key cryptography example. anybody can send anybody a message given they have their public key (public lock). sender encodes a message using a public key of the receiver and the receiver decodes it via it's own private key.
+- Proprety (RSA): N=p*q (p and q are prime), for any e relatively prime to (p-1)(q-1)
+  - x -> x^e mod(N) is a bijection on {0,1...,N-1}
+  - the inverse mapping is using d, where d is the inverse of e modulo (p-1)(q-1) for x in {0,1,...,N-1} (x^e)^d = x mod(N) 
+  - can be proven using the above stuff
+- hashing is giving a "nickname" to an entry to retrieve it easily
+ 
+I am at 1.5
 
 DP is chapter 6. 
 RA Randomised algorithms ( a virtual chapter check page 38)
