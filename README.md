@@ -37,8 +37,9 @@
   - the inverse mapping is using d, where d is the inverse of e modulo (p-1)(q-1) for x in {0,1,...,N-1} (x^e)^d = x mod(N) 
   - can be proven using the above stuff
 - hashing is giving a "nickname" to an entry to retrieve it easily
- 
-I am at 1.5
+- ha(x1,x2,x3,x4) = sigma(ai*xi)mod(n) consider any pair of distinct IP addresses x = (x1,x2,x3,x4 ) and y = (y1,y2,y3,y4) if coeffs a =(a1,a2,a3,a4) are chosen uniformly probability off collision = 1/n (read and understand proof)
+- 
+I am at 1 exercises
 
 DP is chapter 6. 
 RA Randomised algorithms ( a virtual chapter check page 38)
